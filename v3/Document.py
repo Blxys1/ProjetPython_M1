@@ -23,9 +23,9 @@ class Document:
         return self.type_document
 
 # Ajoutez cette partie à votre fichier Document.py
-class RedditDocument(Document):
+class NewsAPIDocument(Document):
     def __init__(self, titre, auteur, date, url, texte, score, nb_commentaires):
-        super().__init__(titre, auteur, date, url, texte, 'Reddit')
+        super().__init__(titre, auteur, date, url, texte, 'NewsAPI')
         self.score = score
         self.nb_commentaires = nb_commentaires
 
