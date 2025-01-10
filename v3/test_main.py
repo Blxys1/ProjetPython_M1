@@ -95,7 +95,6 @@ def process_documents(docs_bruts):
             id2aut[document.auteur] = Author(document.auteur)
         id2aut[document.auteur].add(current_id, document)
         current_id += 1
-
     # Update or initialize corpus
     if corpus is None:
         corpus = Corpus.get_instance("Corpus", collection)
